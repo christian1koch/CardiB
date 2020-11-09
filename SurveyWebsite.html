@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cardi B Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="SurveyStyle.css">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+	<div id= "full-container">
+		<h1 id ="title">Cardi B Survey Form</h1>
+		<p id = "description">Thank you for letting Cardi B make you less of a loser</p>
+		<div>
+			<form id="survey-form">
+				<label id="name-label">Name</label>
+				<input type="text" id="name" placeholder="Enter your Name" required>
+
+				<label id= "email-label">Email</label>
+				<input type="email" id="email" placeholder="Enter your Email" required>
+
+				<label id="number-label">Age(optional)</label>
+				<input type="number" id="number" min="18" max="99" placeholder="Enter your Age" required>
+
+				<label>Choose the word that best describes Cardi B</label>
+				<select id="dropdown">
+					<option value= "awesome">Awesome</option>
+					<option value= "sexy">Sexy</option>
+					<option value= "just a queen">Just a Queen</option>
+					<option value= "slay girl">Slay Girl</option>
+					<option value= "all of the above">Slay Queen (All of the above)</option>
+				</select>
+				<div id = "radio-buttons">
+					<label id="radio-title">Do you love Cardi?</label>
+					<label class="container" for ="yes">
+						<input type="radio" name="radio-love" value="yes">Yes
+					</label>
+					<label for ="exesivelly" class="container">
+						<input type="radio" name="radio-love" value="exesivelly">Exessively
+					</label>
+					<label for ="is-that-a-question" class="container">
+						<input type="radio" name="radio-love" value= "is-that-a-question">Is that even a Question?
+					</label>
+				</div>
+				<div id="checkboxes">
+					<label id="checkboxes-title">Which Qualities does Cardi B have?
+					</label>
+					<label class="container" id = "perfection">
+						<input type="checkbox" value="perfection">Perfection
+					</label>
+					<label class="container" id = "wholesomeness">
+						<input type="checkbox" value="wholesomeness">Wholesomeness
+					</label>
+					<label class="container" id = "godlike">
+						<input type="checkbox" value="godlike">Godlike
+					</label>
+					<label class="container" id = "uniqueness">
+						<input type="checkbox" value="uniqueness">Uniqueness
+					</label>
+				</div>
+				<label id ="additional-comments-label">Anything else you want about Cardi B</label>
+				<textarea placeholder="Anything that can describe her perfection"></textarea>
+				<button type="submit" id ="submit">Submit</button>
+			</form>
+		</div>
+	</div>
+</header>
+</body>
+</html>
